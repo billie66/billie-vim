@@ -1,0 +1,7 @@
+## my own .vim
+
+my own settings plugins
+
+    nerdtree
+    taglist
+
