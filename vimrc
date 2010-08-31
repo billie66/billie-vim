@@ -132,9 +132,16 @@ set smartindent
 """"""""""""""""""""""""""""""""""""""
 " i_CTRL_X_K 
 set dictionary+=~/.vim/dict/simple
-" the ic for dict somethings works something sucks
-set ic 
 set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
+""""""""""""""""""""""""""""""""""""""""
+"
+"             Search
+"
+""""""""""""""""""""""""""""""""""""""""
+" ic also has effect on dictionary settings
+set ic 
+set hlsearch
+set incsearch
 
 """"""""""""""""""""""""""""""""""""""""
 "
