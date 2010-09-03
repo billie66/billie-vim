@@ -1,3 +1,57 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Cope
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Do :help cope if you are unsure what cope is. It's super useful!
+" can be used with vimgrep or anything in quickfix
+map ,cc :botright cope<cr>
+map ,cn :cn<cr>
+map ,cp :cp<cr>
+
+""""""""""""""""""""""""""""""""""""""""
+"
+"             paste
+"
+""""""""""""""""""""""""""""""""""""""""
+map ,pp :setlocal paste!<cr>
+
+""""""""""""""""""""""""""""""
+"
+"         Vim grep
+"
+""""""""""""""""""""""""""""""
+let Grep_Skip_Dirs = '.git CVS SCCS .svn generated'
+set grepprg=/bin/grep\ -nH
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+"          Spell checking
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Pressing ,ss will toggle and untoggle spell checking
+map ,ss :setlocal spell!<cr>
+
+""""""""""""""""""""""""""""""""""""""""
+"
+"             filetype
+"
+""""""""""""""""""""""""""""""""""""""""
+" Enable filetype plugin
+filetype plugin on
+filetype indent on
+
+
+""""""""""""""""""""""""""""""""""""""""
+"
+"             note-taking
+"
+""""""""""""""""""""""""""""""""""""""""
+" with Vim helptags and git, store things 
+" $VIMRUNTIME/doc
+" NOTE: NO ":" in the following line, stange but works
+autocmd FileType help set ma 
+autocmd FileType help set noreadonly
+autocmd BufWritePost ~/.vim/doc/* :helptags ~/.vim/doc
+
 """"""""""""""""""""""""""""""""""""""""
 "
 "             brower
@@ -93,8 +147,11 @@ map ,f :q!<CR>
 """"""""""""""""""""""""""""""""""""""""
 " I need a fake ~/.vimrc: runtime vimrc
 " http://www.derekwyatt.org/vim/the-vimrc-file/my-vimrc-file/
-map ,ev :e ~/.vim/vimrc<CR>
-map ,sv :so ~/.vim/vimrc<CR>
+map ,e :e ~/.vim/vimrc<CR>
+" When vimrc is edited, reload it
+" copied from http://amix.dk/vim/vimrc.html
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+
 
 """"""""""""""""""""""""""""""""""""""""
 "
