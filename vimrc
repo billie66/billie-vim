@@ -84,7 +84,7 @@ map <Tab> :bn<CR>
 "
 """"""""""""""""""""""""""""""""""""""""
 " this is for C comments, see *fo-table* to know what althese options mean
-set fo=croq
+set fo=tcroq
 """"""""""""""""""""""""""""""""""""""""
 "
 "             general
