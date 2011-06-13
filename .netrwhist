@@ -1,6 +1,8 @@
-iilet g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/peter/xxx/sudir'
 let g:netrw_dirhist_2='/home/peter/GitBeijing/_posts'
 let g:netrw_dirhist_3='/home/peter/gitbro/posts'
 let g:netrw_dirhist_4='/home/peter/happypeter.github.com/css'
+let g:netrw_dirhist_5='/home/billie/TLCL/_layouts'
+let g:netrw_dirhist_6='/home/billie/TLCL/book'
