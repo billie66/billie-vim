@@ -9,6 +9,14 @@ map ,cp :cp<cr>
 
 """"""""""""""""""""""""""""""""""""""""
 "
+"             fuzzyfinder
+"
+""""""""""""""""""""""""""""""""""""""""
+map .f :FufFile<cr> 
+map .c :FufCoverageFile<cr> 
+
+""""""""""""""""""""""""""""""""""""""""
+"
 "             paste
 "
 """"""""""""""""""""""""""""""""""""""""
@@ -38,7 +46,6 @@ map ,ss :setlocal spell!<cr>
 " Enable filetype plugin
 filetype plugin on
 filetype indent on
-
 
 """"""""""""""""""""""""""""""""""""""""
 "
@@ -247,6 +254,7 @@ nmap <silent> ,cd :lcd %:h<CR>
 nmap <silent> ,md :!mkdir -p %:p:h<CR>
 """"""""""""""""""""""""""""""""""""""""
 "
-"             test stuff
+"        update help tags file
 "
 """"""""""""""""""""""""""""""""""""""""
+map ,h :helptags ~/.vim/doc

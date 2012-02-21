@@ -1,4 +1,7 @@
 # example 
+snippet hr
+	<hr style="height:5px;width:100%;background:teal" />
+	
 snippet div 
 	<div class="code"><pre>
 	<tt>${1:text}</tt>
@@ -7,18 +10,34 @@ snippet div
 #table
 snippet table
 	<p>
-	<table class="multi" cellpadding="10" border="1">
+	<table class="multi" cellpadding="10" border="1" width="%100">
 	<caption class="cap">${1:cap}</caption>
 	<tr>
 	<th class="title">${2:title}</th>
 	<th class="title">${3:title}</th>
 	</tr>
 	<tr>
-	<td valign="top">${4:text}</td>
+	<td valign="top" width="25%">${4:text}</td>
 	<td valign="top">${5:text}</td>
+	</tr>
+	<tr>
+	<td valign="top"></td>
+	<td valign="top"></td>
 	</tr>
 	</table>
 	</p>
+
+snippet single
+	<table class="single" cellpadding="10" width="%100">
+	<tr>
+	<td>
+	<h3>${1:head}</h3>
+	<p>  </p>
+	<p>  </p>
+	<p>  </p>
+	</td>
+	</tr>
+	</table>
 
 # [link][]
 snippet []
