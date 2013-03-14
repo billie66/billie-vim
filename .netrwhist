@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/billie/TLCL/.git/refs'
 let g:netrw_dirhist_2='/etc/network'
 let g:netrw_dirhist_3='/home/billie/tech_doc'
 let g:netrw_dirhist_4='/home/billie/tech_doc/ubuntu'
+let g:netrw_dirhist_5='/home/billie/tech/vim'
